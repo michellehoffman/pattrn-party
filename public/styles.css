@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,600');
+
+* {
+  font-family: 'Open Sans', sans-serif; 
+  font-weight: 300;
+  margin: 0;
+}
+
+header {
+  align-items: center;
+  background-color: #2F2235;
+  color: #F2F2F2;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 70px;
+}
+
+.title {
+  text-transform: uppercase;
+}
+
+#title-color {
+  color: #34D1D1;
+}
+
+#student-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.accordion-tab-article {
+  margin: 40px auto;
+}
+
+.tabs {
+  margin: auto;
+  width: 70%;
+}
+
+.tabs button {
+  font-size: 1.2rem;
+  height: 50px;
+  width: 24%;
+}
+
+.tab-content {
+  margin: auto;
+  width: 50%;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.tab-content.inactive {
+  display: none;
+}
