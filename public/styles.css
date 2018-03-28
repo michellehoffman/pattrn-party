@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,600');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif; 
+  font-weight: 300;
+  margin: 0;
+}
+
+header {
+  align-items: center;
+  background-color: #2F2235;
+  color: #F2F2F2;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 70px;
+}
+
+.title {
+  text-transform: uppercase;
+}
+
+#title-color {
+  color: #34D1D1;
+}
+
+#student-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+article {
+  margin: 80px 0;
+  text-align: center;
+}
+
+.article-title {
+  line-height: 0;
+  margin: 80px 0 90px 70px;
+  text-align: left;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.article-title span {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+}
+
+.article-title span:after {
+  content: "";
+  position: absolute;
+  margin-left: 50px;
+  margin-right: 70px;
+  border-bottom: 1px solid #666;
+  width: 74%;
+}
+
+.accordion-tab-article {
+  margin: 0 auto;
+}
+
+.accordion-tab {
+  margin: 40px 0;
+}
+
+.tabs {
+  display: flex;
+  margin: auto;
+  width: 80%;
+}
+
+.tabs h3 {
+  color: #666;
+  font-size: 1.2rem;
+  height: 70px;
+  padding-top: 20px;
+  text-align: center;
+  width: 25%;
+}
+
+.button-active {
+  border: 1px solid #666;
+  border-bottom: none;
+  font-weight: 600;
+}
+
+.button-inactive {
+  background-color: #D1D2D3;
+  border: 1px solid #FFF;
+  border-bottom: 1px solid #666;
+}
+
+.tab-content {
+  border: 1px solid #666;
+  border-top: none;
+  margin: auto;
+  padding: 30px 25px;
+  width: 80%;
+}
+
+.tab-content.active {
+  display: flex;
+}
+
+.tab-content.inactive {
+  display: none;
+}
+
+.tab-content-left {
+  background-image: url('http://via.placeholder.com/250x300');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 475px;
+  margin-right: 30px;
+  min-width: 375px;
+}
+
+.tab-content-right {
+  padding: 20px 0;
+  text-align: left;
+}
+
+.tab-content h3 {
+  border-bottom: 1px solid #666;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding-bottom: 15px;
+}
+
+.tab-content p {
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+.view-code-button {
+  background-color: #2F2235;
+  border: none;
+  color: #FFF;
+  font-size: 1.2rem;
+  margin-top: 50px;
+  text-decoration: none;
+  padding: 15px 150px;  
+}
