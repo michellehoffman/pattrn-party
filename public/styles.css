@@ -57,6 +57,8 @@ article {
   width: 74%;
 }
 
+/*ACCORDION TABS*/
+
 .accordion-tab-article {
   margin: 0 auto;
 }
@@ -143,4 +145,67 @@ article {
   margin-top: 50px;
   text-decoration: none;
   padding: 15px 150px;  
+}
+
+/*FLEXIBLE CARDS*/
+
+.flexible-cards-display {
+  width: 80%;
+  margin: 40px auto;
+}
+
+.row-1 {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 2.05fr 1fr;
+  margin-bottom: 20px;
+}
+
+.row-2 {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 20px;
+}
+
+.row-3 {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 2.05fr;
+}
+
+.flex-card {
+  border: 1px solid black;
+  min-width: 0;
+}
+
+.image-title {
+  padding: 20px 15px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-align: left;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+.image {
+  height: 300px;
+  background-image: url('http://via.placeholder.com/300x300');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media screen and (max-width: 800px) {
+  .row-1,
+  .row-2,
+  .row-3 {
+    display: block;
+    margin-bottom: 0;
+  }
+
+  .flex-card{
+    margin-bottom: 20px;
+  }
 }
