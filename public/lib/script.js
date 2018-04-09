@@ -15,4 +15,9 @@ const handleClick = event => {
   inactiveDivs.forEach(div => div.setAttribute('class', 'tab-content inactive'))
 }
 
-$('.tab').on('click', handleClick)
+const dropDownMenu = () => {
+  $('.nav').addClass('show')
+}
+
+$('.tab').on('click', handleClick);
+$('nav').on('click', dropDownMenu);
