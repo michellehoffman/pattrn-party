@@ -78,9 +78,13 @@ article {
   color: #666;
   font-size: 1.2rem;
   height: 70px;
-  padding-top: 20px;
+  padding: 20px;
   text-align: center;
   width: 25%;
+}
+
+.mobile {
+  display: none;
 }
 
 .button-active {
@@ -145,6 +149,59 @@ article {
   font-size: 1.2rem;
   text-decoration: none;
   padding: 15px 150px;  
+}
+
+@media screen and (max-width: 800px) {
+  .tabs {
+    display: none;
+  }
+
+  .button-active {
+    border: none;
+  }
+
+  .mobile {
+    border: none;
+    border-top: 1px solid #666;
+    border-left: 1px solid #666;
+    border-right: 1px solid #666;
+    color: #666;
+    display: block;
+    font-size: 1.2rem;
+    height: 70px;
+    margin: auto;
+    padding: 20px;
+    text-align: left;
+    width: 80%;
+  }
+
+  .tab-4-mobile {
+    border-bottom: 1px solid #666;
+  }
+
+  .tab-content {
+    border-top: 1px solid #666;
+    border-bottom: none;
+    display: flex;
+    padding: 0;
+    flex-wrap: wrap;
+  }
+
+  .tab-content-left {
+    height: 300px;
+  }
+
+  .tab-content-left,
+  .tab-content-right {
+    margin: 0;
+    min-width: 0;
+    width: 100%;
+  }
+
+  .tab-content-right {
+    padding: 40px;
+  }
+
 }
 
 /*FLEXIBLE CARDS*/
