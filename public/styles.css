@@ -57,6 +57,41 @@ article {
   width: 74%;
 }
 
+@media screen and (max-width: 600px) {
+  header {
+    display: block;
+    text-align: center;
+  }
+
+  .title {
+    margin-bottom: 10px;
+  }
+
+  .border {
+    width: 100px;
+    border-bottom: 1px solid #D1D2D3;
+    margin: auto;
+  }
+
+  #student-name {
+    margin-top: 10px;
+  }
+
+  .article-title {
+    margin-left: 0;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .article-title span:after {
+    display: none;
+  }
+
+  .top-nav {
+    margin-top: 40px;
+  }
+}
+
 /*ACCORDION TABS*/
 
 .accordion-tab-article {
