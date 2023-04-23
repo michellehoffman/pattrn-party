@@ -5,7 +5,7 @@
   "main": "./public/index.html",
   "dependencies": {},
   "devDependencies": {
-    "eslint": "^4.19.1"
+    "eslint": "^8.39.0"
   },
   "scripts": {
     "start": "open public/index.html",
